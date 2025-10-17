@@ -19,7 +19,6 @@ webRadioaficionados/
 ├── styles.css          # Estilos CSS personalizados
 ├── script.js           # JavaScript para interactividad
 ├── README.md           # Documentación del proyecto
-└── 660d925c-9553-4f17-91aa-9724c7b0c43d_Optimizacin_de_PC.pdf  # PDF de referencia
 ```
 
 ## 🎨 Secciones de la Web
