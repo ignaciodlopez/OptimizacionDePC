@@ -14,7 +14,7 @@ Una página web moderna y responsive dedicada a temas informáticos, optimizaci�
 ## 📁 Estructura del Proyecto
 
 ```
-webRadioaficionados/
+/
 ├── index.html          # Página principal
 ├── styles.css          # Estilos CSS personalizados
 ├── script.js           # JavaScript para interactividad
