@@ -1,0 +1,1358 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimización de PC by Ignacio D. López</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#home">
+                <i class="bi bi-cpu-fill me-2"></i>Optimización de PC by Ignacio D. López
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#optimizacion">Optimización</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#windows">Windows</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#herramientas">Herramientas</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-outline-light btn-sm ms-4" id="darkModeToggle" aria-label="Alternar modo oscuro" style="padding: 0.375rem 0.75rem; font-size: 1rem;">
+                            <i class="bi bi-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold text-white mb-4">
+                        Optimiza tu PC y Windows al máximo
+                    </h1>
+                    <p class="lead text-white mb-4">
+                        Descubre las mejores técnicas, herramientas y consejos para optimizar el rendimiento de tu computadora y sacar el máximo provecho de Windows.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#optimizacion" class="btn btn-primary btn-lg">
+                            <i class="bi bi-rocket-takeoff me-2"></i>Comenzar
+                        </a>
+                        <a href="#herramientas" class="btn btn-outline-light btn-lg">
+                            <i class="bi bi-tools me-2"></i>Herramientas
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="hero-image text-center">
+                        <div class="hero-icon-container">
+                            <div class="hero-icon-main">
+                                <i class="bi bi-cpu-fill"></i>
+                            </div>
+                            <div class="hero-icon-secondary">
+                                <i class="bi bi-memory"></i>
+                                <i class="bi bi-hdd"></i>
+                                <i class="bi bi-gpu-card"></i>
+                            </div>
+                            <div class="hero-icon-effects">
+                                <div class="pulse-ring"></div>
+                                <div class="pulse-ring delay-1"></div>
+                                <div class="pulse-ring delay-2"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Optimización Section -->
+    <section id="optimizacion" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Guía Completa de Optimización de PC</h2>
+                    <p class="lead text-muted">Sigue estos pasos para optimizar completamente tu computadora</p>
+                </div>
+            </div>
+            
+            <!-- Paso 1: Punto de Restauración -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-warning text-dark">
+                            <h4 class="mb-0"><i class="bi bi-exclamation-triangle me-2"></i>PASO 1: Crear Punto de Restauración</h4>
+                        </div>
+                        <div class="card-body">
+                            <p class="text-warning fw-bold">⚠️ IMPORTANTE: Antes de realizar cualquier optimización, crea un punto de restauración.</p>
+                            <ol>
+                                <li>Buscar "Crear un punto de restauración" en el menú inicio</li>
+                                <li>Seleccionar el disco del sistema (generalmente C:)</li>
+                                <li>Hacer clic en "Crear"</li>
+                                <li>Escribir un nombre descriptivo (ej: "Antes de optimización - [fecha]")</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 2: Análisis del Sistema -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-info text-white">
+                            <h4 class="mb-0"><i class="bi bi-search me-2"></i>PASO 2: Análisis General de Rendimiento</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5>Herramienta WhySoSlow</h5>
+                            <p>Descarga desde: <a href="https://resplendence.com/whysoslow" target="_blank">https://resplendence.com/whysoslow</a></p>
+                            <p>Esta herramienta analiza completamente el sistema para identificar factores que ralentizan la computadora, incluyendo:</p>
+                            <ul>
+                                <li>Temperatura y velocidad del procesador</li>
+                                <li>Procesos en ejecución</li>
+                                <li>Uso de memoria</li>
+                                <li>Fragmentación del disco</li>
+                                <li>Configuración de energía</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 3: Limpieza de Archivos Temporales -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-success text-white">
+                            <h4 class="mb-0"><i class="bi bi-trash me-2"></i>PASO 3: Limpieza de Archivos Temporales</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Archivos Temporales</h5>
+                                    <ol>
+                                        <li>Presionar <kbd>Windows + R</kbd></li>
+                                        <li>Escribir <code>%temp%</code> y presionar Enter</li>
+                                        <li>Seleccionar todo con <kbd>Ctrl + A</kbd> y eliminar</li>
+                                        <li>Repetir con <code>temp</code></li>
+                                    </ol>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Archivos Prefetch</h5>
+                                    <ol>
+                                        <li>Presionar <kbd>Windows + R</kbd></li>
+                                        <li>Escribir <code>prefetch</code> y presionar Enter</li>
+                                        <li>Seleccionar todo y eliminar</li>
+                                    </ol>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <h5>Visor de Eventos</h5>
+                                <ol>
+                                    <li>Presionar <kbd>Windows + R</kbd></li>
+                                    <li>Escribir <code>eventvwr</code></li>
+                                    <li>Ir a "Registro de Windows"</li>
+                                    <li>Hacer clic derecho en cada categoría y seleccionar "Vaciar registro"</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 4: Optimización del Arranque -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0"><i class="bi bi-lightning me-2"></i>PASO 4: Optimización del Arranque</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Configuración del Sistema</h5>
+                                    <ol>
+                                        <li>Presionar <kbd>Windows + R</kbd></li>
+                                        <li>Escribir <code>msconfig</code></li>
+                                        <li>Ir a la pestaña "Arranque"</li>
+                                        <li>Configurar "Tiempo de espera" a 15 segundos</li>
+                                        <li>Activar "Sin arranque de GUI"</li>
+                                    </ol>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Aplicaciones de Inicio</h5>
+                                    <ol>
+                                        <li>Abrir "Administrador de tareas" (<kbd>Ctrl + Shift + Esc</kbd>)</li>
+                                        <li>Ir a la pestaña "Inicio"</li>
+                                        <li>Deshabilitar aplicaciones innecesarias</li>
+                                        <li>Buscar "Aplicaciones de inicio" en configuración</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 5: Optimización de CPU y RAM -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-danger text-white">
+                            <h4 class="mb-0"><i class="bi bi-cpu me-2"></i>PASO 5: Optimización de CPU y RAM</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5>Activar todos los núcleos de la CPU</h5>
+                            <ol>
+                                <li>Presionar <kbd>Windows + R</kbd></li>
+                                <li>Escribir <code>msconfig</code></li>
+                                <li>Ir a "Opciones avanzadas"</li>
+                                <li>Seleccionar "Número de procesadores"</li>
+                                <li>Elegir el máximo número de núcleos</li>
+                                <li>Para "Cantidad máxima de memoria": marcarlo, colocar el número y desmarcarlo</li>
+                            </ol>
+                            
+                            <div class="alert alert-info mt-3">
+                                <strong>Nota:</strong> Si falla, dejar solo la casilla de núcleos activada y la de memoria desmarcada.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 6: Desactivar Animaciones -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-secondary text-white">
+                            <h4 class="mb-0"><i class="bi bi-eye-slash me-2"></i>PASO 6: Desactivar Animaciones del Sistema</h4>
+                        </div>
+                        <div class="card-body">
+                            <ol>
+                                <li>Hacer clic derecho en "Este equipo" → "Propiedades"</li>
+                                <li>Ir a "Configuración avanzada del sistema"</li>
+                                <li>En "Rendimiento" → "Configuración"</li>
+                                <li>Seleccionar "Ajustar para obtener el mejor rendimiento"</li>
+                                <li>O alternativamente, buscar "Animaciones del sistema" y desmarcarlo</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 7: Configuración de Memoria Virtual -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-warning text-dark">
+                            <h4 class="mb-0"><i class="bi bi-memory me-2"></i>PASO 7: Configuración de Memoria Virtual</h4>
+                        </div>
+                        <div class="card-body">
+                            <ol>
+                                <li>Presionar <kbd>Windows + X</kbd> → "Sistema"</li>
+                                <li>Ir a "Configuración avanzada del sistema"</li>
+                                <li>En "Rendimiento" → "Configuración"</li>
+                                <li>Pestaña "Opciones avanzadas" → "Memoria Virtual"</li>
+                                <li>Desmarcar "Administrar automáticamente el tamaño del archivo de paginación"</li>
+                                <li>Seleccionar el disco del sistema</li>
+                                <li>Elegir "Tamaño personalizado"</li>
+                                <li><strong>Cálculo:</strong> Si tienes 8GB RAM, colocar 16GB de memoria virtual (8 x 1024 = 8192 MB)</li>
+                            </ol>
+                            
+                            <div class="alert alert-warning mt-3">
+                                <strong>Fórmula:</strong> Cantidad de GB de RAM × 1024 = MB para memoria virtual
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 8: Optimización de GPU -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-info text-white">
+                            <h4 class="mb-0"><i class="bi bi-gpu-card me-2"></i>PASO 8: Optimización de GPU (Solo si tienes tarjeta gráfica)</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5>Windows 11:</h5>
+                            <ol>
+                                <li>Ir a "Configuración" → "Pantalla" → "Gráficos"</li>
+                                <li>Activar "Aceleración por hardware"</li>
+                            </ol>
+                            
+                            <h5>Windows 10:</h5>
+                            <ol>
+                                <li>Ir a "Configuración" → "Sistema" → "Configuración de elementos gráficos"</li>
+                                <li>Agregar programas que quieras que usen la GPU</li>
+                            </ol>
+                            
+                            <h5>Reiniciar drivers de GPU:</h5>
+                            <p>Presionar <kbd>Ctrl + Shift + Windows + B</kbd></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 9: Modo Máximo Rendimiento -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-success text-white">
+                            <h4 class="mb-0"><i class="bi bi-lightning-charge me-2"></i>PASO 9: Activar Modo Máximo Rendimiento</h4>
+                        </div>
+                        <div class="card-body">
+                            <ol>
+                                <li>Abrir CMD como administrador</li>
+                                <li>Ejecutar el comando:
+                                    <div class="bg-dark text-light p-3 mt-2">
+                                        <code>powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61</code>
+                                    </div>
+                                </li>
+                                <li>Ir a "Opciones de energía"</li>
+                                <li>Seleccionar "Máximo Rendimiento"</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Paso 10: Herramientas de Optimización -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0"><i class="bi bi-tools me-2"></i>PASO 10: Herramientas de Optimización Automática</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Microsoft PC Manager</h5>
+                                    <p>Descarga: <a href="https://pcmanager.microsoft.com/en" target="_blank">https://pcmanager.microsoft.com/en</a></p>
+                                    <p>Herramienta oficial de Microsoft para limpiar archivos temporales y optimizar el sistema.</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Optimizer (Herramienta Avanzada)</h5>
+                                    <p>Descarga: <a href="https://github.com/hellzerg/optimizer" target="_blank">https://github.com/hellzerg/optimizer</a></p>
+                                    <p>Herramienta completa para optimización de Windows 10 y 11.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="mt-4">
+                                <h5>Script de Optimización Automática</h5>
+                                <p>Ejecutar en PowerShell como administrador:</p>
+                                <div class="bg-dark text-light p-3">
+                                    <code>irm https://christitus.com/win | iex</code>
+                                </div>
+                                <p class="mt-2">Seleccionar "Tweaks" y aplicar las optimizaciones recomendadas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Windows Section -->
+    <section id="windows" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Optimización Avanzada de Windows</h2>
+                    <p class="lead text-muted">Configuraciones específicas para Windows 10 y 11</p>
+                </div>
+            </div>
+            
+            <!-- Desactivar Notificaciones -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-info text-white">
+                            <h4 class="mb-0"><i class="bi bi-bell-slash me-2"></i>Desactivar Notificaciones del Sistema</h4>
+                        </div>
+                        <div class="card-body">
+                            <ol>
+                                <li>Ir a "Configuración" → "Sistema" → "Notificaciones y acciones"</li>
+                                <li>Desactivar todas las notificaciones innecesarias</li>
+                                <li>Desactivar "Obtener consejos, trucos y sugerencias"</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experiencias Compartidas -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-warning text-dark">
+                            <h4 class="mb-0"><i class="bi bi-share me-2"></i>Desactivar Experiencias Compartidas</h4>
+                        </div>
+                        <div class="card-body">
+                            <ol>
+                                <li>Ir a "Configuración" → "Sistema" → "Experiencias compartidas"</li>
+                                <li>Desactivar "Compartir entre dispositivos"</li>
+                                <li>Desactivar "Usar mi información de inicio de sesión"</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+            </div>
+
+            <!-- Aplicaciones en Segundo Plano -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-danger text-white">
+                            <h4 class="mb-0"><i class="bi bi-app me-2"></i>Desactivar Aplicaciones en Segundo Plano</h4>
+                        </div>
+                        <div class="card-body">
+                            <ol>
+                                <li>Ir a "Configuración" → "Privacidad" → "Aplicaciones en segundo plano"</li>
+                                <li>Desactivar "Permitir que las aplicaciones se ejecuten en segundo plano"</li>
+                                <li>O seleccionar individualmente qué aplicaciones pueden ejecutarse</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                </div>
+            </div>
+
+            <!-- Optimización de Juegos -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-success text-white">
+                            <h4 class="mb-0"><i class="bi bi-controller me-2"></i>Optimización para Juegos</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Configuración de Juegos</h5>
+                                    <ol>
+                                        <li>Ir a "Configuración" → "Juegos"</li>
+                                        <li>Desactivar "Modo juego"</li>
+                                        <li>Desactivar "Captura de pantalla"</li>
+                                        <li>Desactivar "Grabación de juegos"</li>
+                                    </ol>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Reducir Input Lag</h5>
+                                    <ol>
+                                        <li>Abrir "Administrador de dispositivos"</li>
+                                        <li>Ir a "Dispositivos del Sistema"</li>
+                                        <li>Deshabilitar "Temporizador de eventos de alta precisión"</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Optimización de Chrome -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0"><i class="bi bi-browser-chrome me-2"></i>Optimizar Google Chrome</h4>
+                        </div>
+                        <div class="card-body">
+                            <ol>
+                                <li>Abrir Chrome → Tres puntos (arriba derecha) → "Configuración"</li>
+                                <li>Ir a "Opciones avanzadas"</li>
+                                <li>Desactivar "Usar aceleración por hardware cuando esté disponible"</li>
+                                <li>Desactivar "Permitir que Chrome se ejecute en segundo plano"</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eliminar Bloatware -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-secondary text-white">
+                            <h4 class="mb-0"><i class="bi bi-trash me-2"></i>Eliminar Bloatware y Aplicaciones Preinstaladas</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Método Automático (PowerShell)</h5>
+                                    <p>Ejecutar en PowerShell como administrador:</p>
+                                    <div class="bg-dark text-light p-3">
+                                        <code>iwr -useb https://git.io/debloat|iex</code>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Herramienta BloatBox</h5>
+                                    <p>Descarga: <a href="https://github.com/builtbybel/bloatbox" target="_blank">https://github.com/builtbybel/bloatbox</a></p>
+                                    <p>Usar la función "Remove Selected" para NO borrar las cosas que seleccionemos.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Optimización de SSD -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-warning text-dark">
+                            <h4 class="mb-0"><i class="bi bi-hdd me-2"></i>Optimización de SSD</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5>Herramienta BleachBit</h5>
+                            <ol>
+                                <li>Descargar BleachBit desde su sitio oficial</li>
+                                <li>Seleccionar "Exploración en profundidad"</li>
+                                <li>Esto mejora la lectura y escritura del SSD</li>
+                            </ol>
+                            
+                            <h5 class="mt-3">Configuración de Windows para SSD</h5>
+                            <ol>
+                                <li>Ir a "Configuración" → "Sistema" → "Almacenamiento"</li>
+                                <li>Activar "Optimización de almacenamiento"</li>
+                                <li>Configurar "Optimización automática"</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reducir Procesos svchost.exe -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-danger text-white">
+                            <h4 class="mb-0"><i class="bi bi-gear me-2"></i>Reducir Procesos svchost.exe</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="alert alert-warning">
+                                <strong>⚠️ Advertencia:</strong> Esta modificación requiere editar el registro. Haz una copia de seguridad antes de proceder.
+                            </div>
+                            <ol>
+                                <li>Abrir "Regedit" (Editor del registro)</li>
+                                <li>Navegar a: <code>HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control</code></li>
+                                <li>Buscar "SvcHostSplitThresholdInKB"</li>
+                                <li>Modificar el valor según tu RAM:
+                                    <ul>
+                                        <li>2 GB RAM = 2097152</li>
+                                        <li>4 GB RAM = 4194304</li>
+                                        <li>8 GB RAM = 8388608</li>
+                                        <li>16 GB RAM = 16777216</li>
+                                        <li>32 GB RAM = 33554432</li>
+                                    </ul>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Eliminar Archivos Basura -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-success text-white">
+                            <h4 class="mb-0"><i class="bi bi-broom me-2"></i>Eliminar Archivos Basura</h4>
+                                    </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Archivos de Aplicaciones</h5>
+                                    <ol>
+                                        <li>Presionar <kbd>Windows + R</kbd></li>
+                                        <li>Escribir <code>%appdata%</code></li>
+                                        <li>Eliminar carpetas de programas desinstalados</li>
+                                    </ol>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Archivos Temporales W11</h5>
+                                    <ol>
+                                        <li>Ir a "Sistema" → "Almacenamiento"</li>
+                                        <li>Seleccionar "Archivos temporales"</li>
+                                        <li>Vaciar todo lo posible</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Herramientas Section -->
+    <section id="herramientas" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Herramientas Profesionales de Optimización</h2>
+                    <p class="lead text-muted">Software especializado para análisis, limpieza y optimización del sistema</p>
+                </div>
+            </div>
+            
+            <!-- Herramientas de Análisis -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">🔍 Herramientas de Análisis del Sistema</h3>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0"><i class="bi bi-search me-2"></i>WhySoSlow</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Análisis completo del sistema para identificar factores que ralentizan la PC.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check text-success me-2"></i>Monitoreo de temperatura</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Análisis de procesos</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Uso de memoria</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Fragmentación del disco</li>
+                            </ul>
+                            <a href="https://resplendence.com/whysoslow" target="_blank" class="btn btn-outline-info btn-sm">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="bi bi-cpu me-2"></i>Quick CPU</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Ajuste y monitoreo de la configuración del procesador para mejorar rendimiento.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check text-success me-2"></i>Gestión de energía</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Automatización de limpieza RAM</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Ajustes del procesador</li>
+                            </ul>
+                            <a href="https://www.coderbag.com/product/quickcpu" target="_blank" class="btn btn-outline-primary btn-sm">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0"><i class="bi bi-memory me-2"></i>Quick Memory Test</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Verificación de la integridad de las memorias RAM instaladas.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check text-success me-2"></i>Test rápido de memoria</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Detección de errores</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Informe detallado</li>
+                            </ul>
+                            <a href="https://www.softwareok.com/?Download=QuickMemoryTestOK" target="_blank" class="btn btn-outline-success btn-sm">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Herramientas de Limpieza -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">🧹 Herramientas de Limpieza y Optimización</h3>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="mb-0"><i class="bi bi-tools me-2"></i>Microsoft PC Manager</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Herramienta oficial de Microsoft para limpiar archivos temporales y optimizar el sistema.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check text-success me-2"></i>Limpieza automática</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Optimización del sistema</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Seguro y confiable</li>
+                            </ul>
+                            <a href="https://pcmanager.microsoft.com/en" target="_blank" class="btn btn-outline-warning btn-sm">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-danger text-white">
+                            <h5 class="mb-0"><i class="bi bi-gear me-2"></i>Optimizer</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Herramienta completa para optimización de Windows 10 y 11.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check text-success me-2"></i>Optimización automática</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Eliminación de bloatware</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Configuración avanzada</li>
+                            </ul>
+                            <a href="https://github.com/hellzerg/optimizer" target="_blank" class="btn btn-outline-danger btn-sm">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-secondary text-white">
+                            <h5 class="mb-0"><i class="bi bi-trash me-2"></i>BloatBox</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Eliminación segura de bloatware y aplicaciones preinstaladas de Windows.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check text-success me-2"></i>Eliminación selectiva</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Interfaz intuitiva</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Seguro de usar</li>
+                            </ul>
+                            <a href="https://github.com/builtbybel/bloatbox" target="_blank" class="btn btn-outline-secondary btn-sm">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Herramientas de Diagnóstico -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">🔧 Herramientas de Diagnóstico de Hardware</h3>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0"><i class="bi bi-hdd me-2"></i>Victoria HDD</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Diagnóstico y reparación avanzada de discos duros y SSD.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check text-success me-2"></i>Análisis de sectores</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Reparación de errores</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Test de velocidad</li>
+                            </ul>
+                            <a href="https://hdd.by/victoria/" target="_blank" class="btn btn-outline-info btn-sm">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0"><i class="bi bi-hdd-stack me-2"></i>CrystalDiskInfo</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Monitoreo de salud de discos duros y SSD con información detallada.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check text-success me-2"></i>Estado de salud</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Temperatura</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Horas de uso</li>
+                            </ul>
+                            <a href="https://crystalmark.info/en/software/crystaldiskinfo/" target="_blank" class="btn btn-outline-success btn-sm">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="bi bi-cpu me-2"></i>CPU-Z</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Información detallada del procesador, memoria y placa base.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check text-success me-2"></i>Especificaciones CPU</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Información de RAM</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Datos de placa base</li>
+                            </ul>
+                            <a href="https://www.cpuid.com/softwares/cpu-z.html" target="_blank" class="btn btn-outline-primary btn-sm">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Herramientas de GPU -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">🎮 Herramientas de GPU y Gaming</h3>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-danger text-white">
+                            <h5 class="mb-0"><i class="bi bi-gpu-card me-2"></i>MSI Afterburner</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Overclocking y monitoreo de tarjeta gráfica para máximo rendimiento.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check text-success me-2"></i>Overclocking seguro</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Monitoreo en tiempo real</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Control de ventiladores</li>
+                            </ul>
+                            <a href="https://www.msi.com/Landing/afterburner/graphics-cards" target="_blank" class="btn btn-outline-danger btn-sm">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="mb-0"><i class="bi bi-tools me-2"></i>DDU (Display Driver Uninstaller)</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Desinstalación completa de drivers de GPU para evitar conflictos.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check text-success me-2"></i>Desinstalación profunda</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Elimina conflictos</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Modo seguro</li>
+                            </ul>
+                            <a href="https://www.guru3d.com/download/display-driver-uninstaller-download/" target="_blank" class="btn btn-outline-warning btn-sm">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0"><i class="bi bi-speedometer2 me-2"></i>GPU-Z</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Información detallada de la tarjeta gráfica y monitoreo en tiempo real.</p>
+                            <ul class="list-unstyled">
+                                <li><i class="bi bi-check text-success me-2"></i>Especificaciones GPU</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Monitoreo de temperatura</li>
+                                <li><i class="bi bi-check text-success me-2"></i>Uso de memoria</li>
+                            </ul>
+                            <a href="https://www.techpowerup.com/gpuz/" target="_blank" class="btn btn-outline-info btn-sm">Descargar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Scripts de Optimización -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">⚡ Scripts de Optimización Automática</h3>
+                </div>
+            </div>
+            
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h5 class="mb-0"><i class="bi bi-code-slash me-2"></i>Chris Titus Tech WinUtil</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Script completo de optimización de Windows con múltiples opciones.</p>
+                            <div class="bg-dark text-light p-3 mb-3">
+                                <code>irm https://christitus.com/win | iex</code>
+                            </div>
+                            <p class="small">Ejecutar en PowerShell como administrador. Seleccionar "Tweaks" para optimizaciones.</p>
+                            <a href="https://github.com/ChrisTitusTech/winutil" target="_blank" class="btn btn-outline-primary btn-sm">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0"><i class="bi bi-toolbox me-2"></i>ToolboxBS</h5>
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">Solución completa para verificación y optimización de Windows.</p>
+                            <div class="bg-dark text-light p-3 mb-3">
+                                <code>irm "https://cutt.ly/ToolboxBS" | iex</code>
+                            </div>
+                            <p class="small">Ejecutar en PowerShell como administrador para acceso completo a todas las funciones.</p>
+                            <a href="https://github.com/BrandonSepulveda/ToolboxBS" target="_blank" class="btn btn-outline-success btn-sm">Ver en GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reparación y Solución de Errores Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">🔧 Reparación y Solución de Errores</h2>
+                    <p class="lead text-muted">Soluciones profesionales para problemas comunes de Windows</p>
+                </div>
+            </div>
+            
+            <!-- Pantalla Azul -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-danger text-white">
+                            <h4 class="mb-0"><i class="bi bi-exclamation-triangle me-2"></i>Reparar Pantalla Azul de Windows</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Soluciones Inmediatas</h5>
+                                    <ol>
+                                        <li>Utilizar punto de restauración</li>
+                                        <li>Ejecutar reparación automática</li>
+                                        <li>Reiniciar en modo seguro (F8)</li>
+                                        <li>Verificar drivers de hardware</li>
+                                    </ol>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Comandos de Reparación</h5>
+                                    <div class="bg-dark text-light p-3">
+                                        <code>sfc /scannow</code><br>
+                                        <code>DISM /Online /Cleanup-image /Restorehealth</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reparar Archivos del Sistema -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-warning text-dark">
+                            <h4 class="mb-0"><i class="bi bi-tools me-2"></i>Reparar Archivos Faltantes o Dañados</h4>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Ejecutar como administrador en CMD:</strong></p>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Paso 1: DISM</h5>
+                                    <div class="bg-dark text-light p-3">
+                                        <code>DISM.exe /Online /Cleanup-image /Restorehealth</code>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Paso 2: SFC</h5>
+                                    <div class="bg-dark text-light p-3">
+                                        <code>sfc /scannow</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="alert alert-info mt-3">
+                                <strong>Info:</strong> <a href="https://support.microsoft.com/es-es/topic/use-la-herramienta-comprobador-de-archivos-de-sistema-para-reparar-los-archivos-de-sistema-que-faltan-o-están-dañados-79aa86cb-ca52-166a-92a3-966e85d4094e" target="_blank">Más información sobre SFC</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reparar Disco -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-info text-white">
+                            <h4 class="mb-0"><i class="bi bi-hdd me-2"></i>Revisar y Reparar Estado del Disco</h4>
+                        </div>
+                        <div class="card-body">
+                            <h5>Comandos CHKDSK</h5>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="bg-dark text-light p-3 text-center">
+                                        <code>chkdsk /?</code><br>
+                                        <small>Ver opciones disponibles</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="bg-dark text-light p-3 text-center">
+                                        <code>chkdsk /f</code><br>
+                                        <small>Corrige errores del disco</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="bg-dark text-light p-3 text-center">
+                                        <code>chkdsk /r</code><br>
+                                        <small>Encuentra sectores defectuosos</small>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="bg-dark text-light p-3 text-center">
+                                        <code>chkdsk /f /r</code><br>
+                                        <small>Ambas comprobaciones</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Herramientas de Diagnóstico -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-success text-white">
+                            <h4 class="mb-0"><i class="bi bi-gear me-2"></i>Herramientas de Diagnóstico Avanzado</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Victoria HDD</h5>
+                                    <p>Diagnóstico y reparación de discos duros</p>
+                                    <ul>
+                                        <li>Análisis de sectores</li>
+                                        <li>Reparación de errores</li>
+                                        <li>Test de velocidad</li>
+                                    </ul>
+                                    <a href="https://hdd.by/victoria/" target="_blank" class="btn btn-outline-success btn-sm">Descargar</a>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>HDD Regenerator</h5>
+                                    <p>Regeneración de sectores dañados</p>
+                                    <ul>
+                                        <li>Recuperación de datos</li>
+                                        <li>Reparación de sectores</li>
+                                        <li>Análisis profundo</li>
+                                    </ul>
+                                    <a href="https://www.dposoft.net/" target="_blank" class="btn btn-outline-success btn-sm">Descargar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Verificar Hardware -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-primary text-white">
+                            <h4 class="mb-0"><i class="bi bi-cpu me-2"></i>Verificación de Hardware</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h5>Memoria RAM</h5>
+                                    <p>Test de integridad de memorias</p>
+                                    <div class="bg-dark text-light p-2">
+                                        <code>wmic MemoryChip get BankLabel, Capacity, MemoryType, TypeDetail, Speed, ManuFacturer</code>
+                                    </div>
+                                    <a href="https://www.softwareok.com/?Download=QuickMemoryTestOK" target="_blank" class="btn btn-outline-primary btn-sm mt-2">Quick Memory Test</a>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>Estado de Batería</h5>
+                                    <p>Verificar salud de batería (laptops)</p>
+                                    <div class="bg-dark text-light p-2">
+                                        <code>powercfg /batteryreport</code>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <h5>Resetear BIOS</h5>
+                                    <ol>
+                                        <li>Apagar PC</li>
+                                        <li>Desconectar</li>
+                                        <li>Cambiar jumper CMOS 15 seg</li>
+                                        <li>Volver a colocar</li>
+                                        <li>Encender</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Comandos Útiles -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-secondary text-white">
+                            <h4 class="mb-0"><i class="bi bi-terminal me-2"></i>Comandos Útiles de Reparación</h4>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h5>Limpieza de Sistema</h5>
+                                    <ul>
+                                        <li><code>ipconfig /flushdns</code> - Limpiar caché DNS</li>
+                                        <li><code>mrt</code> - Eliminar software malicioso</li>
+                                        <li><code>winver</code> - Ver versión de Windows</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h5>Recuperación</h5>
+                                    <ul>
+                                        <li><code>rstrui</code> - Abrir restauración del sistema</li>
+                                        <li><code>msconfig</code> - Configuración del sistema</li>
+                                        <li><code>eventvwr</code> - Visor de eventos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">💡 Consejos Profesionales y Tips</h2>
+                    <p class="lead text-muted">Tips avanzados para optimización de PC</p>
+                </div>
+            </div>
+            
+            <!-- Tips de Windows -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">🪟 Tips de Windows</h3>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-lightbulb text-warning display-4 mb-3"></i>
+                            <h5 class="card-title">Atajos Útiles</h5>
+                            <ul class="list-unstyled text-start">
+                                <li><kbd>W + .</kbd> - Emojis</li>
+                                <li><kbd>W + D</kbd> - Ir al escritorio</li>
+                                <li><kbd>Ctrl + Shift + Esc</kbd> - Administrador de tareas</li>
+                                <li><kbd>W + R</kbd> - Ejecutar</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-shield-check text-success display-4 mb-3"></i>
+                            <h5 class="card-title">Seguridad</h5>
+                            <ul class="list-unstyled text-start">
+                                <li>Crear puntos de restauración frecuentemente</li>
+                                <li>Mantener antivirus actualizado</li>
+                                <li>Realizar escaneos regulares</li>
+                                <li>Usar Windows Sandbox para pruebas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-arrow-up-circle text-primary display-4 mb-3"></i>
+                            <h5 class="card-title">Mantenimiento</h5>
+                            <ul class="list-unstyled text-start">
+                                <li>Limpieza semanal del sistema</li>
+                                <li>Actualizar drivers regularmente</li>
+                                <li>Verificar estado del disco</li>
+                                <li>Monitorear temperaturas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body text-center">
+                            <i class="bi bi-gear text-info display-4 mb-3"></i>
+                            <h5 class="card-title">Optimización</h5>
+                            <ul class="list-unstyled text-start">
+                                <li>Desactivar animaciones</li>
+                                <li>Optimizar arranque</li>
+                                <li>Configurar memoria virtual</li>
+                                <li>Eliminar bloatware</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Información de Hardware -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">🔧 Información de Hardware</h3>
+                </div>
+            </div>
+            
+            <div class="row g-4 mb-5">
+                <div class="col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0"><i class="bi bi-memory me-2"></i>Verificar Información de RAM</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Ejecutar en CMD para ver detalles de memoria:</p>
+                            <div class="bg-dark text-light p-3">
+                                <code>wmic MemoryChip get BankLabel, Capacity, MemoryType, TypeDetail, Speed, ManuFacturer</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="card shadow-sm">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0"><i class="bi bi-hdd me-2"></i>Tipos de SSD M.2</h5>
+                        </div>
+                        <div class="card-body">
+                            <p>Conoce los diferentes tipos de SSD M.2:</p>
+                            <ul>
+                                <li><strong>SATA M.2:</strong> Velocidad similar a SSD 2.5"</li>
+                                <li><strong>NVMe M.2:</strong> Velocidad mucho mayor</li>
+                                <li><strong>PCIe 3.0:</strong> Hasta 3.5 GB/s</li>
+                                <li><strong>PCIe 4.0:</strong> Hasta 7 GB/s</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Teclas de Booteo -->
+            <div class="row mb-4">
+                <div class="col-12">
+                    <h3 class="text-center mb-4">⌨️ Teclas de Booteo por Fabricante</h3>
+                </div>
+            </div>
+            
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="card shadow-sm">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead class="table-dark">
+                                        <tr>
+                                            <th>Marca</th>
+                                            <th>Tecla de Booteo</th>
+                                            <th>Marca</th>
+                                            <th>Tecla de Booteo</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>Acer</strong></td>
+                                            <td>F2 o Supr</td>
+                                            <td><strong>Dell</strong></td>
+                                            <td>F2 o F12</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Asus</strong></td>
+                                            <td>F2 o Supr</td>
+                                            <td><strong>HP</strong></td>
+                                            <td>F10 o Esc</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Lenovo</strong></td>
+                                            <td>F1, F2, F12 o Novo</td>
+                                            <td><strong>MSI</strong></td>
+                                            <td>Supr o F11</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>Samsung</strong></td>
+                                            <td>F2 o F10</td>
+                                            <td><strong>Toshiba</strong></td>
+                                            <td>F2, F12 o Esc</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-5 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center mb-5">
+                    <h2 class="display-5 fw-bold">Contacto</h2>
+                    <p class="lead">¿Necesitas ayuda con la optimización de tu PC?</p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <i class="bi bi-envelope display-4 text-primary mb-3"></i>
+                        <h5>Email</h5>
+                        <p>contacto@webradioaficionados.com</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <i class="bi bi-telephone display-4 text-primary mb-3"></i>
+                        <h5>Teléfono</h5>
+                        <p>+34 123 456 789</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="text-center">
+                        <i class="bi bi-geo-alt display-4 text-primary mb-3"></i>
+                        <h5>Ubicación</h5>
+                        <p>Madrid, España</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h5>Optimización de PC by Ignacio D. López</h5>
+                    <p class="mb-0">Optimización profesional de PC y Windows</p>
+                </div>
+                <div class="col-lg-6 text-lg-end">
+                    <p class="mb-0">&copy; 2024 Optimización de PC by Ignacio D. López. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+</html>
+
