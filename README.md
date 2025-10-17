@@ -148,14 +148,3 @@ Las animaciones se pueden ajustar en `styles.css`:
 - [ ] Sistema de búsqueda
 - [ ] PWA (Progressive Web App)
 
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia MIT. Ver el archivo LICENSE para más detalles.
-
-## 👨‍💻 Autor
-
-**Optimización de PC by Ignacio D. López** - Especialistas en optimización de PC y Windows
-
----
-
-*Página web creada con ❤️ para la comunidad de aficionados a la informática*
