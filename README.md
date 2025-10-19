@@ -138,12 +138,4 @@ Las animaciones se pueden ajustar en `styles.css`:
 - Navegación por teclado
 - Contraste de colores accesible
 
-## 🚀 Próximas Mejoras
-
-- [ ] Sistema de comentarios
-- [ ] Blog integrado
-- [ ] Formulario de contacto funcional
-- [ ] Base de datos de herramientas
-- [ ] Sistema de búsqueda
-- [ ] PWA (Progressive Web App)
 
